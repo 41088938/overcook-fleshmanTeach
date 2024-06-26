@@ -17,7 +17,7 @@ public class ChangesceneToGame : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             //  Application.LoadLevel("SampleScene");
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("Level");
         }
 
     }

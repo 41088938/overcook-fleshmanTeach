@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GamePauseUI : MonoBehaviour{
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button mainMenuButton;
     [SerializeField] private Button optionsButton;
+    [SerializeField] private Button ExitButton;
+
     private void Awake(){
         resumeButton.onClick.AddListener(() =>{
             KitchenGameManager.Instance.TogglePauseGame();
@@ -19,6 +22,13 @@ public class GamePauseUI : MonoBehaviour{
         {
             OptionsUI.Instance.Show();
         });
+
+        ExitButton.onClick.AddListener(() =>
+        { 
+            SceneManager.LoadScene("Level");
+        });
+
+       
     }
 
     private void Start(){
