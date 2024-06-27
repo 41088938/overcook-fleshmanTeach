@@ -1935,8 +1935,6 @@ GameObject:
   - component: {fileID: 354386928}
   - component: {fileID: 354386930}
   - component: {fileID: 354386929}
-  - component: {fileID: 354386932}
-  - component: {fileID: 354386931}
   - component: {fileID: 354386933}
   - component: {fileID: 354386935}
   - component: {fileID: 354386934}
@@ -1961,7 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 224.5, y: 75}
+  scrollPos: {x: 45, y: 132.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
@@ -1974,8 +1972,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 354386922}
-  selectedCommands:
-  - {fileID: 354386936}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2272,60 +2269,6 @@ MonoBehaviour:
   logMessage:
     stringRef: {fileID: 0}
     stringVal: 'On begin game finished running '
---- !u!114 &354386931
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354386916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 12
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 87870088}
-  targetComponentAssemblyName: 
-  targetComponentFullname: 
-  targetComponentText: 
-  targetMethod: 
-  targetMethodText: 
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: 
-  showInherited: 0
-  callMode: 0
---- !u!114 &354386932
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354386916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 89
-    y: 90.5
-    width: 89
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 11
-  blockName: Locker
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 354386931}
-  suppressAllAutoSelections: 0
 --- !u!114 &354386933
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2355,7 +2298,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &354386934
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2382,7 +2325,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &354386935
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2409,7 +2352,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &354386936
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
