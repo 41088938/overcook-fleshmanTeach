@@ -24,8 +24,8 @@ public class GamePauseUI : MonoBehaviour{
         });
 
         ExitButton.onClick.AddListener(() =>
-        { 
-            SceneManager.LoadScene("Level");
+        {
+          SceneManager.LoadScene("Level");
         });
 
        

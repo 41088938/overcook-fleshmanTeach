@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
 {
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button quitButton;
+    [SerializeField] private Button PlayButton;
+    [SerializeField] private Button QuitButton;
 
-        private void Awake()
+    private void Awake()
     {
-        playButton.onClick.AddListener(() =>
+        PlayButton.onClick.AddListener(() =>
         {
             Loader.Load(Loader.Scene.intor_storyBG);
         });
-        
-        quitButton.onClick.AddListener(() => 
+
+        QuitButton.onClick.AddListener(() => 
         {
             Application.Quit();
         });
